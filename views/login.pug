@@ -1,0 +1,17 @@
+extends base.pug
+
+block content
+    .main
+        form.auth
+            span.title Привет!
+            span.logo_login
+            .username
+                label
+                    input.input#username(type="text" autocomplete='on' required)
+                    .focus-input Username
+            .password
+                label
+                    input.input#password(type="password" autocomplete='on' required)
+                    .focus-input Password    
+            .container-button            
+                button.login Login

@@ -1,0 +1,37 @@
+extends base.pug
+
+mixin row-content(news, number)
+    .row-content(class=`row_${number}`)
+        ._id #{news._id}
+        .Article.edit(contenteditable="false") #{news.Article}
+        a.Url.smallcontent(href=news.Url target="_blank") Open
+        .createdAt #{news.createdAt}
+        .updatedAt #{news.updatedAt}
+        .Action.smallcontent
+            button.edit_button(class=`row_${number}` id="edit")
+            button.delete_button(class=`row_${number}` id="delete") 
+
+block content
+    .main#main 
+        .row-content.top
+            ._id Id
+            .Article Article
+            .Url.smallcontent Url
+            .createdAt Createdt
+            .updatedAt Updated
+            .Action.smallcontent Action  
+        each val, index in data.news
+            +row-content(data.news[index], index)
+        .navigator
+            a.page-first#pagefirst(href=`/page/1`)
+                .icon-page-first#pagefirst
+                    .icon-first-bar#pagefirst
+            a.page-previous#pageprevious
+                .icon-page-previous#pageprevious
+            .number-page
+                p #{data.info}
+            a.page-next#pagenext
+                .icon-page-next#pagenext
+            a.page-last#pagelast(href=`/page/${data.countPage}`)
+                .icon-page-last#pagelast
+                    .icon-last-bar#pagelast            
