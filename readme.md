@@ -20,7 +20,7 @@
 
 Панель выводит каждое свойство полученного документа. Можно изменять значение Article и оно изменится в БД.
 
-![panel](C:\Users\Uriy\Documents\node-all-project\node-panelDB\other\panel.png)
+![panel](https://github.com/Progovich/node-panel-mongodb/tree/main/other/panel.png)
 
 ### Серверная часть
 
