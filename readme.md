@@ -19,8 +19,7 @@
 ### Панель управления БД
 
 Панель выводит каждое свойство полученного документа. Можно изменять значение Article и оно изменится в БД.
-
-![panel](https://github.com/Progovich/node-panel-mongodb/tree/main/other/panel.png)
+![alt text](https://github.com/Progovich/node-panel-mongodb/tree/main/other/panel.png)
 
 ### Серверная часть
 
