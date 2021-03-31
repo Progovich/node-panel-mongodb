@@ -74,7 +74,7 @@ I use this panel only for the administrator, all values are entered in the datab
 
 The panel displays each property of the received document MongoDB. You can change the value of Article and it will change in the database.
 
-![panel](C:\Users\Uriy\Documents\node-all-project\node-panelDB\other\panel.png)
+![alt text](https://raw.githubusercontent.com/Progovich/node-panel-mongodb/main/other/panel.png)
 
 ### Server part
 
